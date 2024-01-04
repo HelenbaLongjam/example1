@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+         var divElement = $('<div/>');
+         divElement.css('border','2px solid red');
+         //$('p').wrap(divElement);
+        // $('p').wrapAll(divElement);
+        $('p').wrapInner(divElement);
+        });
+    </script>
+</head>
+<body>
+    <p>one</p>
+    <p>two</p>
+    <p>three</p>
+    <p>four</p>
+</body>
+</html>             
